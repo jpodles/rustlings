@@ -11,6 +11,17 @@
 // TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
+fn calculate_price_of_apples(apples: i32) -> i32 {
+    const LOWER_PRICE_TRESHHOLD: i32 = 40;
+    const LOWER_PRICE: i32 = 1;
+    const NORMAL_PRICE: i32 = 2;
+    if apples > LOWER_PRICE_TRESHHOLD {
+        return apples * LOWER_PRICE;
+    }
+    
+    apples * NORMAL_PRICE
+}
+
 
 fn main() {
     // You can optionally experiment here.
